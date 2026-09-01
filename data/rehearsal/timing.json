@@ -1,0 +1,11 @@
+{
+  "n_rows": 344.0,
+  "n_flights": 8.0,
+  "n_windows": 9.0,
+  "seconds_total": 0.27340670791454613,
+  "seconds_read_adapt": 0.00620345794595778,
+  "seconds_clean": 0.021333332872018218,
+  "seconds_graphs": 0.2161979170050472,
+  "seconds_write": 0.029672000091522932,
+  "seconds_wall": 0.27371987514197826
+}

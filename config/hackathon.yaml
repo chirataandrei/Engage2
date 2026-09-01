@@ -1,0 +1,22 @@
+# FILL THIS IN AT H+0 WHEN THE ORGANISERS DROP THE DATASET.
+# Map organiser column names onto the canonical schema.
+# Canonical fields: flight_id, ts, lat, lon, alt_ft, gs_kt, track_deg, vert_rate_fpm, aircraft_type, atco_event
+source: hackathon
+raw_path: data/raw/hackathon.csv
+mapping:
+  flight_id: TODO
+  ts: TODO
+  lat: TODO
+  lon: TODO
+  # Provide exactly one altitude field:
+  alt_ft: TODO
+  # alt_m: TODO
+  # Provide exactly one ground-speed field:
+  gs_kt: TODO
+  # gs_mps: TODO
+  track_deg: TODO
+  # Provide exactly one vertical-rate field:
+  vert_rate_fpm: TODO
+  # vert_rate_mps: TODO
+  aircraft_type: null
+  atco_event: null

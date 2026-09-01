@@ -1,0 +1,11 @@
+mapping:
+  aircraft_type: typecode
+  alt_m: altitude_m
+  atco_event: clearance
+  flight_id: icao
+  gs_mps: speed_mps
+  lat: latitude
+  lon: longitude
+  track_deg: heading
+  ts: time_epoch
+  vert_rate_mps: vz_mps

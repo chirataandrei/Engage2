@@ -1,0 +1,56 @@
+seed: 42
+device: auto  # auto | cpu | mps | cuda
+resample_s: 10
+proximity_nm: 20.0
+separation_nm: 5.0
+separation_ft: 1000.0
+history_steps: 12    # 2 minutes at 10 s
+horizon_steps: 6     # 1 minute
+max_nodes: 24
+spline_k: 3
+zscore_clip: 6.0
+
+features:
+  node:
+    - lat
+    - lon
+    - alt_ft
+    - gs_kt_z
+    - track_sin
+    - track_cos
+    - vert_rate_fpm_z
+  edge:
+    - dist_nm
+    - rel_gs_kt
+    - cpa_nm
+    - tcpa_s
+    - dalt_ft
+
+model:
+  hidden_dim: 64
+  gat_heads: 4
+  gat_layers: 2
+  tcn_channels: [64, 64]
+  tcn_kernel: 3
+  dropout: 0.1
+  encoder: dense  # dense | pyg
+
+train:
+  lr: 0.001
+  weight_decay: 0.0001
+  batch_size: 4
+  max_epochs: 20
+  amp: true
+  early_stopping_patience: 5
+  lambda_traj: 1.0
+  lambda_conflict: 0.5
+  lambda_intent: 0.3
+  lambda_physics: 0.1
+  focal_gamma: 2.0
+  num_workers: 0
+  limit_train_batches: null
+
+paths:
+  processed: data/processed
+  checkpoints: checkpoints
+  logs: lightning_logs

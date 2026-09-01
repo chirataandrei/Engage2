@@ -1,0 +1,13 @@
+source: bluesky
+# BlueSky log / SCN-derived CSV. Altitudes often in ft already.
+mapping:
+  flight_id: acid
+  ts: simt
+  lat: lat
+  lon: lon
+  alt_ft: alt
+  gs_kt: tas
+  track_deg: hdg
+  vert_rate_fpm: vs
+  aircraft_type: type
+  atco_event: reso_cmd

@@ -1,0 +1,14 @@
+# Example mapping for a dataset whose columns do NOT match the canonical schema.
+# Used by scripts/rehearsal.py — this is the same exercise as H+0 at the hackathon.
+source: rehearsal
+mapping:
+  flight_id: icao
+  ts: time_epoch
+  lat: latitude
+  lon: longitude
+  alt_m: altitude_m
+  gs_mps: speed_mps
+  track_deg: heading
+  vert_rate_mps: vz_mps
+  aircraft_type: typecode
+  atco_event: clearance

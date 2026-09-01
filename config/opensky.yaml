@@ -1,0 +1,24 @@
+source: opensky
+# Live REST snapshot or weekly state-vector CSV.
+# Velocity in OpenSky is m/s, altitudes in metres.
+mapping:
+  flight_id: icao24
+  ts: time
+  lat: lat
+  lon: lon
+  alt_m: baroaltitude
+  gs_mps: velocity
+  track_deg: heading
+  vert_rate_mps: vertrate
+  callsign: callsign
+  onground: onground
+
+bbox:
+  lamin: 44.5
+  lomin: 13.0
+  lamax: 47.0
+  lomax: 19.5
+
+live_api: https://opensky-network.org/api/states/all
+weekly_index: https://opensky-network.org/datasets/states/
+trino_docs: https://openskynetwork.github.io/opensky-api/trino.html
